@@ -4,6 +4,7 @@
 
 osThreadId USBHandle;
 osThreadId USBTickHandle;
+extern int pc;
 
 void USBTask(void *pvParameters) {
     const char *pcTaskName = "USBTask is running.\r\n";
@@ -20,11 +21,11 @@ void USBTask(void *pvParameters) {
 
         if (start) {
             RunScript(Sync, 3);
-            int pc = 0;
             while (!HAL_GPIO_ReadPin(key1_GPIO_Port, key1_Pin)) { ; }
             for (;;) {
                 if (!HAL_GPIO_ReadPin(key1_GPIO_Port, key1_Pin)) {
                     while (!HAL_GPIO_ReadPin(key1_GPIO_Port, key1_Pin)) { ; }
+                    HID_Task(PAUSE);
                     break;
                 }
                 evt = osSignalWait(0x02, osWaitForever);
@@ -39,6 +40,7 @@ void USBTask(void *pvParameters) {
                 }
             }
         }
+
         while (!HAL_GPIO_ReadPin(key1_GPIO_Port, key1_Pin)) { ; }
         start = 0;
     }

@@ -2020,16 +2020,16 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-
  .text.print    0x00000000080065a8      0x148 CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
                 0x00000000080065a8                print
  .text.countTimeTask
-                0x00000000080066f0       0x60 CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
+                0x00000000080066f0       0x50 CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
                 0x00000000080066f0                countTimeTask
  .text.countTimeTask2
-                0x0000000008006750       0x3c CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
-                0x0000000008006750                countTimeTask2
+                0x0000000008006740       0x3c CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
+                0x0000000008006740                countTimeTask2
  .text.printPCTask
-                0x000000000800678c       0x20 CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
-                0x000000000800678c                printPCTask
- .text.USBTask  0x00000000080067ac       0xcc CMakeFiles/AutoJoystick.elf.dir/Src/My/program.c.obj
-                0x00000000080067ac                USBTask
+                0x000000000800677c       0x20 CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
+                0x000000000800677c                printPCTask
+ .text.USBTask  0x000000000800679c       0xdc CMakeFiles/AutoJoystick.elf.dir/Src/My/program.c.obj
+                0x000000000800679c                USBTask
  .text.USBTickTask
                 0x0000000008006878       0x28 CMakeFiles/AutoJoystick.elf.dir/Src/My/program.c.obj
                 0x0000000008006878                USBTickTask
@@ -2489,8 +2489,8 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-
                 0x0000000020000efc                Task2Handle
  .bss.PCHandle  0x0000000020000f00        0x4 CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
                 0x0000000020000f00                PCHandle
- .bss.i         0x0000000020000f04        0x4 CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
-                0x0000000020000f04                i
+ .bss.pc        0x0000000020000f04        0x4 CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
+                0x0000000020000f04                pc
  .bss.USBHandle
                 0x0000000020000f08        0x4 CMakeFiles/AutoJoystick.elf.dir/Src/My/program.c.obj
                 0x0000000020000f08                USBHandle
@@ -2629,7 +2629,7 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-
                 0x00000000000006bf       0x1d /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtn.o
 OUTPUT(AutoJoystick.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x1df0d
+.debug_info     0x0000000000000000    0x1df01
  .debug_info    0x0000000000000000      0x7ad CMakeFiles/AutoJoystick.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_info    0x00000000000007ad      0xc2b CMakeFiles/AutoJoystick.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_info    0x00000000000013d8      0x463 CMakeFiles/AutoJoystick.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c.obj
@@ -2652,20 +2652,20 @@ OUTPUT(AutoJoystick.elf elf32-littlearm)
  .debug_info    0x00000000000117cb      0xc6c CMakeFiles/AutoJoystick.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
  .debug_info    0x0000000000012437     0x21c9 CMakeFiles/AutoJoystick.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .debug_info    0x0000000000014600      0x1c5 CMakeFiles/AutoJoystick.elf.dir/Src/My/key.c.obj
- .debug_info    0x00000000000147c5      0x3de CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
- .debug_info    0x0000000000014ba3      0x59b CMakeFiles/AutoJoystick.elf.dir/Src/My/program.c.obj
- .debug_info    0x000000000001513e     0x12c1 CMakeFiles/AutoJoystick.elf.dir/Src/My/usb.c.obj
- .debug_info    0x00000000000163ff     0x19e6 CMakeFiles/AutoJoystick.elf.dir/Src/main.c.obj
- .debug_info    0x0000000000017de5      0xb9c CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_info    0x0000000000018981      0x9c1 CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_hal_timebase_tim.c.obj
- .debug_info    0x0000000000019342      0xb71 CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_info    0x0000000000019eb3      0x462 CMakeFiles/AutoJoystick.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_info    0x000000000001a315      0xe93 CMakeFiles/AutoJoystick.elf.dir/Src/usb_device.c.obj
- .debug_info    0x000000000001b1a8     0x1fa9 CMakeFiles/AutoJoystick.elf.dir/Src/usbd_conf.c.obj
- .debug_info    0x000000000001d151      0xd9a CMakeFiles/AutoJoystick.elf.dir/Src/usbd_desc.c.obj
- .debug_info    0x000000000001deeb       0x22 CMakeFiles/AutoJoystick.elf.dir/startup/startup_stm32f103xe.s.obj
+ .debug_info    0x00000000000147c5      0x3df CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
+ .debug_info    0x0000000000014ba4      0x58e CMakeFiles/AutoJoystick.elf.dir/Src/My/program.c.obj
+ .debug_info    0x0000000000015132     0x12c1 CMakeFiles/AutoJoystick.elf.dir/Src/My/usb.c.obj
+ .debug_info    0x00000000000163f3     0x19e6 CMakeFiles/AutoJoystick.elf.dir/Src/main.c.obj
+ .debug_info    0x0000000000017dd9      0xb9c CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_info    0x0000000000018975      0x9c1 CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_hal_timebase_tim.c.obj
+ .debug_info    0x0000000000019336      0xb71 CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_info    0x0000000000019ea7      0x462 CMakeFiles/AutoJoystick.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_info    0x000000000001a309      0xe93 CMakeFiles/AutoJoystick.elf.dir/Src/usb_device.c.obj
+ .debug_info    0x000000000001b19c     0x1fa9 CMakeFiles/AutoJoystick.elf.dir/Src/usbd_conf.c.obj
+ .debug_info    0x000000000001d145      0xd9a CMakeFiles/AutoJoystick.elf.dir/Src/usbd_desc.c.obj
+ .debug_info    0x000000000001dedf       0x22 CMakeFiles/AutoJoystick.elf.dir/startup/startup_stm32f103xe.s.obj
 
-.debug_abbrev   0x0000000000000000     0x49ec
+.debug_abbrev   0x0000000000000000     0x49f6
  .debug_abbrev  0x0000000000000000      0x1fd CMakeFiles/AutoJoystick.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_abbrev  0x00000000000001fd      0x310 CMakeFiles/AutoJoystick.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_abbrev  0x000000000000050d      0x1da CMakeFiles/AutoJoystick.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c.obj
@@ -2689,17 +2689,17 @@ OUTPUT(AutoJoystick.elf elf32-littlearm)
  .debug_abbrev  0x0000000000002eee      0x37d CMakeFiles/AutoJoystick.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .debug_abbrev  0x000000000000326b       0xe0 CMakeFiles/AutoJoystick.elf.dir/Src/My/key.c.obj
  .debug_abbrev  0x000000000000334b      0x17a CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
- .debug_abbrev  0x00000000000034c5      0x1e7 CMakeFiles/AutoJoystick.elf.dir/Src/My/program.c.obj
- .debug_abbrev  0x00000000000036ac      0x242 CMakeFiles/AutoJoystick.elf.dir/Src/My/usb.c.obj
- .debug_abbrev  0x00000000000038ee      0x2cd CMakeFiles/AutoJoystick.elf.dir/Src/main.c.obj
- .debug_abbrev  0x0000000000003bbb      0x1ce CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_abbrev  0x0000000000003d89      0x1bc CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_hal_timebase_tim.c.obj
- .debug_abbrev  0x0000000000003f45      0x1a4 CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_abbrev  0x00000000000040e9      0x14b CMakeFiles/AutoJoystick.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_abbrev  0x0000000000004234      0x1d8 CMakeFiles/AutoJoystick.elf.dir/Src/usb_device.c.obj
- .debug_abbrev  0x000000000000440c      0x31a CMakeFiles/AutoJoystick.elf.dir/Src/usbd_conf.c.obj
- .debug_abbrev  0x0000000000004726      0x2b4 CMakeFiles/AutoJoystick.elf.dir/Src/usbd_desc.c.obj
- .debug_abbrev  0x00000000000049da       0x12 CMakeFiles/AutoJoystick.elf.dir/startup/startup_stm32f103xe.s.obj
+ .debug_abbrev  0x00000000000034c5      0x1f1 CMakeFiles/AutoJoystick.elf.dir/Src/My/program.c.obj
+ .debug_abbrev  0x00000000000036b6      0x242 CMakeFiles/AutoJoystick.elf.dir/Src/My/usb.c.obj
+ .debug_abbrev  0x00000000000038f8      0x2cd CMakeFiles/AutoJoystick.elf.dir/Src/main.c.obj
+ .debug_abbrev  0x0000000000003bc5      0x1ce CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_abbrev  0x0000000000003d93      0x1bc CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_hal_timebase_tim.c.obj
+ .debug_abbrev  0x0000000000003f4f      0x1a4 CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_abbrev  0x00000000000040f3      0x14b CMakeFiles/AutoJoystick.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_abbrev  0x000000000000423e      0x1d8 CMakeFiles/AutoJoystick.elf.dir/Src/usb_device.c.obj
+ .debug_abbrev  0x0000000000004416      0x31a CMakeFiles/AutoJoystick.elf.dir/Src/usbd_conf.c.obj
+ .debug_abbrev  0x0000000000004730      0x2b4 CMakeFiles/AutoJoystick.elf.dir/Src/usbd_desc.c.obj
+ .debug_abbrev  0x00000000000049e4       0x12 CMakeFiles/AutoJoystick.elf.dir/startup/startup_stm32f103xe.s.obj
 
 .debug_aranges  0x0000000000000000     0x16b0
  .debug_aranges
@@ -2807,7 +2807,7 @@ OUTPUT(AutoJoystick.elf elf32-littlearm)
  .debug_ranges  0x0000000000001428       0x50 CMakeFiles/AutoJoystick.elf.dir/Src/usbd_desc.c.obj
  .debug_ranges  0x0000000000001478       0x20 CMakeFiles/AutoJoystick.elf.dir/startup/startup_stm32f103xe.s.obj
 
-.debug_line     0x0000000000000000    0x10985
+.debug_line     0x0000000000000000    0x10986
  .debug_line    0x0000000000000000      0x52a CMakeFiles/AutoJoystick.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_line    0x000000000000052a      0x710 CMakeFiles/AutoJoystick.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_line    0x0000000000000c3a      0x3e2 CMakeFiles/AutoJoystick.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c.obj
@@ -2830,18 +2830,18 @@ OUTPUT(AutoJoystick.elf elf32-littlearm)
  .debug_line    0x000000000000b751      0x5a3 CMakeFiles/AutoJoystick.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
  .debug_line    0x000000000000bcf4     0x1503 CMakeFiles/AutoJoystick.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .debug_line    0x000000000000d1f7      0x34a CMakeFiles/AutoJoystick.elf.dir/Src/My/key.c.obj
- .debug_line    0x000000000000d541      0x45b CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
- .debug_line    0x000000000000d99c      0x41f CMakeFiles/AutoJoystick.elf.dir/Src/My/program.c.obj
- .debug_line    0x000000000000ddbb      0x588 CMakeFiles/AutoJoystick.elf.dir/Src/My/usb.c.obj
- .debug_line    0x000000000000e343      0x6b9 CMakeFiles/AutoJoystick.elf.dir/Src/main.c.obj
- .debug_line    0x000000000000e9fc      0x361 CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x000000000000ed5d      0x321 CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_hal_timebase_tim.c.obj
- .debug_line    0x000000000000f07e      0x36d CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_line    0x000000000000f3eb      0x313 CMakeFiles/AutoJoystick.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_line    0x000000000000f6fe      0x44c CMakeFiles/AutoJoystick.elf.dir/Src/usb_device.c.obj
- .debug_line    0x000000000000fb4a      0x89a CMakeFiles/AutoJoystick.elf.dir/Src/usbd_conf.c.obj
- .debug_line    0x00000000000103e4      0x500 CMakeFiles/AutoJoystick.elf.dir/Src/usbd_desc.c.obj
- .debug_line    0x00000000000108e4       0xa1 CMakeFiles/AutoJoystick.elf.dir/startup/startup_stm32f103xe.s.obj
+ .debug_line    0x000000000000d541      0x458 CMakeFiles/AutoJoystick.elf.dir/Src/My/pc.c.obj
+ .debug_line    0x000000000000d999      0x423 CMakeFiles/AutoJoystick.elf.dir/Src/My/program.c.obj
+ .debug_line    0x000000000000ddbc      0x588 CMakeFiles/AutoJoystick.elf.dir/Src/My/usb.c.obj
+ .debug_line    0x000000000000e344      0x6b9 CMakeFiles/AutoJoystick.elf.dir/Src/main.c.obj
+ .debug_line    0x000000000000e9fd      0x361 CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x000000000000ed5e      0x321 CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_hal_timebase_tim.c.obj
+ .debug_line    0x000000000000f07f      0x36d CMakeFiles/AutoJoystick.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_line    0x000000000000f3ec      0x313 CMakeFiles/AutoJoystick.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_line    0x000000000000f6ff      0x44c CMakeFiles/AutoJoystick.elf.dir/Src/usb_device.c.obj
+ .debug_line    0x000000000000fb4b      0x89a CMakeFiles/AutoJoystick.elf.dir/Src/usbd_conf.c.obj
+ .debug_line    0x00000000000103e5      0x500 CMakeFiles/AutoJoystick.elf.dir/Src/usbd_desc.c.obj
+ .debug_line    0x00000000000108e5       0xa1 CMakeFiles/AutoJoystick.elf.dir/startup/startup_stm32f103xe.s.obj
 
 .debug_str      0x0000000000000000     0x701a
  .debug_str     0x0000000000000000      0x8f7 CMakeFiles/AutoJoystick.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj

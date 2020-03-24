@@ -11,7 +11,7 @@ osThreadId Task2Handle;
 osThreadId PCHandle;
 uint8_t dig_font[] = {0xeb, 0x28, 0xb3, 0xba, 0x78, 0xda, 0xdb, 0xa8, 0xfb, 0xf8};
 
-int i = 0;
+int pc = 0;
 
 void print4(int digit) {
     print(digit % 10, 4u);
@@ -61,7 +61,7 @@ void countTimeTask(void *pvParameters) {
     int start_flag = 0;
     for (;;) {
         if (HAL_GPIO_ReadPin(key0_GPIO_Port, key0_Pin)) {
-            i++;
+//            i++;
             HAL_GPIO_WritePin(led0_GPIO_Port, led0_Pin, GPIO_PIN_RESET);
             osDelay(500);
             HAL_GPIO_WritePin(led0_GPIO_Port, led0_Pin, GPIO_PIN_SET);
@@ -86,6 +86,6 @@ void printPCTask(void *pvParameters) {
     const char *pcTaskName = "printPCTask is running\r\n";
     volatile unsigned long ul;
     for (;;) {
-        print4(i);
+        print4(pc);
     }
 }
