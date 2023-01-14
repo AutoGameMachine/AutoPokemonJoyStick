@@ -14,17 +14,17 @@ void USBTask(void *pvParameters) {
     int start = 0;
 
     while (1) {
-        if (!HAL_GPIO_ReadPin(key1_GPIO_Port, key1_Pin)) {
-            while (!HAL_GPIO_ReadPin(key1_GPIO_Port, key1_Pin)) { ; }
+        if (!HAL_GPIO_ReadPin(key0_GPIO_Port, key0_Pin)) {
+            while (!HAL_GPIO_ReadPin(key0_GPIO_Port, key0_Pin)) { ; }
             start = 1;
         }
 
         if (start) {
             RunScript(Sync, 3);
-            while (!HAL_GPIO_ReadPin(key1_GPIO_Port, key1_Pin)) { ; }
+            while (!HAL_GPIO_ReadPin(key0_GPIO_Port, key0_Pin)) { ; }
             for (;;) {
-                if (!HAL_GPIO_ReadPin(key1_GPIO_Port, key1_Pin)) {
-                    while (!HAL_GPIO_ReadPin(key1_GPIO_Port, key1_Pin)) { ; }
+                if (!HAL_GPIO_ReadPin(key0_GPIO_Port, key0_Pin)) {
+                    while (!HAL_GPIO_ReadPin(key0_GPIO_Port, key0_Pin)) { ; }
                     HID_Task(PAUSE);
                     break;
                 }
@@ -39,9 +39,9 @@ void USBTask(void *pvParameters) {
                     pc = 0;
                 }
             }
-        }
 
-        while (!HAL_GPIO_ReadPin(key1_GPIO_Port, key1_Pin)) { ; }
+            while (!HAL_GPIO_ReadPin(key0_GPIO_Port, key0_Pin)) { ; }
+        }
         start = 0;
     }
 }

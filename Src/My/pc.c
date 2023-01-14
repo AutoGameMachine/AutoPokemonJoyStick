@@ -60,13 +60,13 @@ void countTimeTask(void *pvParameters) {
     volatile unsigned long ul;
     int start_flag = 0;
     for (;;) {
-        if (HAL_GPIO_ReadPin(key0_GPIO_Port, key0_Pin)) {
+//        if (HAL_GPIO_ReadPin(key0_GPIO_Port, key0_Pin)) {
 //            i++;
             HAL_GPIO_WritePin(led0_GPIO_Port, led0_Pin, GPIO_PIN_RESET);
-            osDelay(500);
+            osDelay(250);
             HAL_GPIO_WritePin(led0_GPIO_Port, led0_Pin, GPIO_PIN_SET);
-            osDelay(500);
-        }
+            osDelay(250);
+//        }
     }
 }
 

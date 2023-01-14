@@ -450,18 +450,6 @@ task.h
 
 ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h
 
-/Users/zhou/CLionProjects/AutoJoystick/Src/My/pc.c
-pc.h
-/Users/zhou/CLionProjects/AutoJoystick/Src/My/pc.h
-main.h
-/Users/zhou/CLionProjects/AutoJoystick/Src/My/main.h
-cmsis_os.h
-/Users/zhou/CLionProjects/AutoJoystick/Src/My/cmsis_os.h
-
-/Users/zhou/CLionProjects/AutoJoystick/Src/My/pc.h
-stdint.h
--
-
 /Users/zhou/CLionProjects/AutoJoystick/Src/My/program.c
 cmsis_os.h
 -

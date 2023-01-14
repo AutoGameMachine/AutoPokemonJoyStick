@@ -138,21 +138,21 @@ int main(void) {
     extern osThreadId PCHandle;
     extern osThreadId USBHandle;
     extern osThreadId USBTickHandle;
-    extern osThreadId KeyHandle;
+//    extern osThreadId KeyHandle;
 
     osThreadDef(Task1, countTimeTask, osPriorityNormal, 0, 32);
     osThreadDef(Task2, countTimeTask2, osPriorityNormal, 0, 32);
     osThreadDef(PCTask, printPCTask, osPriorityNormal, 0, 32);
     osThreadDef(USBTaskThread, USBTask, osPriorityNormal, 0, 128);
     osThreadDef(USBTickTaskThread, USBTickTask, osPriorityNormal, 0, 32);
-    osThreadDef(KeyThread, KeyTask, osPriorityNormal, 0, 16);
+//    osThreadDef(KeyThread, KeyTask, osPriorityNormal, 0, 16);
 
     Task1Handle = osThreadCreate(osThread(Task1), NULL);
     Task2Handle = osThreadCreate(osThread(Task2), NULL);
     PCHandle = osThreadCreate(osThread(PCTask), NULL);
     USBHandle = osThreadCreate(osThread(USBTaskThread), NULL);
     USBTickHandle = osThreadCreate(osThread(USBTickTaskThread), NULL);
-    KeyHandle = osThreadCreate(osThread(KeyThread), NULL);
+//    KeyHandle = osThreadCreate(osThread(KeyThread), NULL);
 
     /* USER CODE END RTOS_THREADS */
 
@@ -164,7 +164,7 @@ int main(void) {
     /* USER CODE BEGIN WHILE */
     while (1) {
         /* USER CODE END WHILE */
-
+        char *char_p = (char *) malloc(sizeof(char));
         /* USER CODE BEGIN 3 */
     }
     /* USER CODE END 3 */
